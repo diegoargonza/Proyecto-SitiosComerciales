@@ -26,7 +26,7 @@
                     </select>
                 </div>
 
-                <div class="col-lg-4 col-12 mb-3">
+                 <div class="col-lg-4 col-12 mb-3">
                     <label for="fecha" class="form-label">Fecha</label>
                     <input type="date" class="form-control" id="fecha" name="fecha" value="{{old('fecha',$sale->fecha)}}">
                 </div>
@@ -40,7 +40,29 @@
                     </select>
                 </div>
 
-                <saletax-component/>
+                <div class=" col-lg-3 col-md-6 col-12 mb-3">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="text" class="form-control" id="cantidad" name="cantidad" v-model="cantidad">
+                </div>
+
+                <div class=" col-lg-3 col-md-6 col-12 mb-3">
+                    <label for="subtotal" class="form-label">Subtotal</label>
+                    <input type="text" class="form-control" id="subtotal" name="subtotal" v-model="subtotal">
+                </div>
+    
+
+                <div class=" col-lg-3 col-md-6 col-12 mb-3">
+                    <label for="cantidad" class="form-label">IVA</label>
+                    <input type="text" class="form-control" id="iva" name="iva" v-model="iva">
+                </div>
+
+                <div class=" col-lg-3 col-md-6 col-12 mb-3">
+                    <label for="cantidad" class="form-label">Total</label>
+                    <input type="text" class="form-control" id="total" name="total" v-model="total">
+                </div>
+                
+
+
             
                 <div class="mb-3">
                     <label for="name" class="form-label">Observaciones</label>

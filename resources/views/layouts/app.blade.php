@@ -59,7 +59,17 @@
                                 </li>
                                 @if (Auth::user()->role_id == 1)                                    
                                     <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('sale.index') }}">Ventas</a>
+                                        <a class="nav-link" href="{{ route('sale.index') }}">Ventas</a>
+                                    </li>
+                                @endif
+                                @if (Auth::user()->role_id == 3)                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('products.index') }}">Productos</a>
+                                    </li>
+                                @endif
+                                @if (Auth::user()->role_id == 3)                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('cart') }}">Carrito</a>
                                     </li>
                                 @endif
 
